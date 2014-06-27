@@ -1,12 +1,37 @@
 /* 
-    Document   : custom
-    Created on : Jun 16, 2014, 3:00:35 PM
-    Author     : alessandra
-    Description:
-        Purpose of the stylesheet follows.
-*/
+    side nav bar style
+---------------------------------*/
+#documentation-side-navbar, #developer-side-navbar{
+    position:fixed;
+    width: 12%;
+}
 
-root { 
-    display: block;
+li.list-group-item.active a{
+    color: white;
+}
+/*
+    code snippet style 
+---------------------------------*/
+
+.code{
+    background-color: #d6d6d6;
+    margin: 10px;
+    padding:10px;
+    font-family: monospace;
+    border:#080808 dashed thin;
+}
+/*_____________________________________
+
+FOOTER
+______________________________________*/
+footer p{
+    line-height: 50px;
+}
+
+.footer-navbar{
+    margin-bottom: 0px !important;
+    padding: 0px;
+    position: absolute;
+    width: 100%;
 }
 

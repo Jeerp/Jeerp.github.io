@@ -4,10 +4,40 @@ layout: default
 lang: eng
 active: developer
 ---
-<div class="container">
-    <div class="row"> 
-        <div class="col-lg-12 col-md-12">  
-            <h1> {{page.title}} </h1>
-        </div>
+<div class="row"> 
+     <div class="col-lg-3 col-md-3">
+        {% include developer-side-navbar.html %}
+     </div>
+    <div class="col-lg-9 col-md-9"> 
+        <section id="components">
+            <div class="page-header">
+                    <h2>{{ site.t[page.lang].components }}</h2>
+                </div>
+            <p>In this section are described the components necessary to a proper functioning of Applus Energie.</p>
+            
+            <h3>Dog </h3>
+            <p>Refers to: <a href="http://dog-gateway.github.io/">http://dog-gateway.github.io/</a></p>
+               
+            <h3>iEnergy</h3>
+            <p>Refers to: <a href="http://ienergy-test.github.io/eng/developer.html#components">http://ienergy-test.github.io/eng/developer.html#components</a></p>
+            
+            <h3>Gui</h3>
+            <p>Gui module is developed with standard web technology and allows the visualization of and the interecation with consumption and climatic confort data. It is subdivided in desktop interface and mobile interface.</p>
+        </section>
+        <section id="installation">
+            <div class="page-header">
+                <h2>{{ site.t[page.lang].installation }}</h2>
+            </div>
+            <p>Below is described the installation procedure for Applus Energie.</p>
+            
+            <h3>Dog</h3>
+            <p>Refers to: <a href="http://ienergy-test.github.io/eng/developer.html#installation">http://ienergy-test.github.io/eng/developer.html#installation</a></p>
+            
+            <h3>iEnergy</h3>
+            <p>Refers to: <a href="http://ienergy-test.github.io/eng/developer.html#installation">http://ienergy-test.github.io/eng/developer.html#installation</a></p>
+            
+            <h3>Gui</h3>
+            <p>The installation is done with a .war. It is provided a configuration file (config.js) where specify the path of the server to which sens the REST requests.</p>
+        </section>
     </div>
 </div>
